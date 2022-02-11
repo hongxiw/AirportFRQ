@@ -1,13 +1,11 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class AirportTester
-{
+public class AirportTester {
     public static int passedTests = 0;
     public static int failedTests = 0;
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // setup test Flight arraylist and capitalHub
         Flight f0 = new Flight(25, 50.00, 30);
         Flight f1 = new Flight(10, 100.50, 60);
@@ -34,16 +32,12 @@ public class AirportTester
         System.out.println("TOTAL FAILED TESTS: " + failedTests + " out of 3");
     }
 
-    public static void testRevenue(double actual, double expected, int testNo)
-    {
+    public static void testRevenue(double actual, double expected, int testNo) {
         System.out.print("TEST #" + testNo + " -- ");
-        if (actual == expected)
-        {
+        if (actual == expected) {
             System.out.println("PASS");
             passedTests++;
-        }
-        else
-        {
+        } else {
             System.out.println("*****FAIL*****");
             failedTests++;
         }
@@ -51,16 +45,12 @@ public class AirportTester
         System.out.println("   Actual: " + actual);
     }
 
-    public static void testUpdate(int actual, int expected, int testNo)
-    {
+    public static void testUpdate(int actual, int expected, int testNo) {
         System.out.print("TEST #" + testNo + " -- ");
-        if (actual == expected)
-        {
+        if (actual == expected) {
             System.out.println("PASS");
             passedTests++;
-        }
-        else
-        {
+        } else {
             System.out.println("*****FAIL*****");
             failedTests++;
         }
@@ -68,16 +58,12 @@ public class AirportTester
         System.out.println("   Actual: " + actual);
     }
 
-    public static void testUpdateFlights(ArrayList<Flight> actual, ArrayList<Flight> expected, int testNo)
-    {
+    public static void testUpdateFlights(ArrayList<Flight> actual, ArrayList<Flight> expected, int testNo) {
         System.out.print("TEST #" + testNo + " -- ");
-        if (actual.equals(expected))
-        {
+        if (actual.equals(expected)) {
             System.out.println("PASS");
             passedTests++;
-        }
-        else
-        {
+        } else {
             System.out.println("*****FAIL*****");
             failedTests++;
         }
